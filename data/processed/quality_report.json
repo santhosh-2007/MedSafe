@@ -1,0 +1,13 @@
+{
+  "total_patients": 108,
+  "total_raw_medications": 280,
+  "total_raw_allergies": 70,
+  "total_raw_conditions": 109,
+  "duplicate_medications_removed": 4,
+  "normalized_medication_names": 33,
+  "normalized_allergy_names": 17,
+  "conflicting_allergy_records": 1,
+  "unknown_medications_flagged": 1,
+  "missing_allergy_values": 39,
+  "ended_medications_flagged": 44
+}

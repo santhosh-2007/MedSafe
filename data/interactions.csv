@@ -1,0 +1,10 @@
+rule_id,rule_type,medication_a,medication_b,related_allergen,related_condition,risk_level,evidence_strength,description
+R-ALL-001,Medication-Allergy,Amoxicillin,,Penicillin,,HIGH,HIGH,SYNTHETIC DEMONSTRATION RULE: Beta-lactam antibiotic cross-reactivity with documented Penicillin allergy.
+R-ALL-002,Medication-Allergy,Penicillin V,,Penicillin,,HIGH,HIGH,SYNTHETIC DEMONSTRATION RULE: Direct administration of Penicillin to patient with Penicillin allergy.
+R-ALL-003,Medication-Allergy,Ibuprofen,,NSAIDs,,HIGH,HIGH,SYNTHETIC DEMONSTRATION RULE: NSAID administration with documented NSAID sensitivity.
+R-MED-001,Medication-Medication,Warfarin,Aspirin,,,HIGH,HIGH,SYNTHETIC DEMONSTRATION RULE: Concurrent anticoagulation and antiplatelet therapy increases major bleeding risk.
+R-MED-002,Medication-Medication,Warfarin,Ibuprofen,,,HIGH,HIGH,SYNTHETIC DEMONSTRATION RULE: NSAID combined with Warfarin significantly elevates gastrointestinal bleeding risk.
+R-MED-003,Medication-Medication,Lisinopril,Spironolactone,,,MODERATE,MODERATE,SYNTHETIC DEMONSTRATION RULE: ACE inhibitor combined with potassium-sparing agent may cause severe hyperkalemia.
+R-COM-001,Medication-Comorbidity,Gentamicin,,,Chronic Kidney Disease Stage 3,HIGH,HIGH,SYNTHETIC DEMONSTRATION RULE: Aminoglycoside nephrotoxicity risk elevated in pre-existing Chronic Kidney Disease.
+R-COM-002,Medication-Comorbidity,Ibuprofen,,,Chronic Kidney Disease Stage 3,MODERATE,HIGH,SYNTHETIC DEMONSTRATION RULE: NSAID nephrotoxicity can exacerbate pre-existing renal impairment.
+R-COM-003,Medication-Comorbidity,Metoprolol,,,Asthma,MODERATE,MODERATE,SYNTHETIC DEMONSTRATION RULE: Beta-blocker administration may induce bronchospasm in severe asthma patients.

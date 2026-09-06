@@ -1,0 +1,15 @@
+{
+  "run_timestamp": "2026-09-06T05:50:20.975027",
+  "total_cases": 108,
+  "baseline_median_time_sec": 29.5,
+  "prototype_median_time_sec": 4.5,
+  "time_reduction_pct": 84.7,
+  "target_reduction_pct": 25.0,
+  "precision": 0.615,
+  "recall": 0.8,
+  "f1_score": 0.695,
+  "false_positives": 5,
+  "false_negatives": 2,
+  "missed_risks": 2,
+  "status": "TARGET_ACHIEVED"
+}

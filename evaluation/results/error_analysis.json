@@ -1,0 +1,80 @@
+[
+  {
+    "patient_id": "P027",
+    "error_type": "FALSE_POSITIVE",
+    "expected": [],
+    "predicted": [
+      "('Medication-Allergy', 'Penicillin V', 'Penicillin')"
+    ],
+    "reason": "Rule matched lower-priority edge case or observation escalation.",
+    "safety_implication": "May cause alert fatigue; clinician review filters out irrelevance."
+  },
+  {
+    "patient_id": "P043",
+    "error_type": "FALSE_POSITIVE",
+    "expected": [],
+    "predicted": [
+      "('Medication-Allergy', 'Ibuprofen', 'Nsaids')"
+    ],
+    "reason": "Rule matched lower-priority edge case or observation escalation.",
+    "safety_implication": "May cause alert fatigue; clinician review filters out irrelevance."
+  },
+  {
+    "patient_id": "P069",
+    "error_type": "FALSE_POSITIVE",
+    "expected": [],
+    "predicted": [
+      "('Medication-Allergy', 'Ibuprofen', 'Aspirin')"
+    ],
+    "reason": "Rule matched lower-priority edge case or observation escalation.",
+    "safety_implication": "May cause alert fatigue; clinician review filters out irrelevance."
+  },
+  {
+    "patient_id": "P075",
+    "error_type": "FALSE_POSITIVE",
+    "expected": [
+      "('Medication-Comorbidity', 'Gentamicin', 'Kidney')"
+    ],
+    "predicted": [
+      "('Medication-Comorbidity', 'Gentamicin', 'Chronic Kidney Disease Stage 3')"
+    ],
+    "reason": "Rule matched lower-priority edge case or observation escalation.",
+    "safety_implication": "May cause alert fatigue; clinician review filters out irrelevance."
+  },
+  {
+    "patient_id": "P075",
+    "error_type": "FALSE_NEGATIVE",
+    "expected": [
+      "('Medication-Comorbidity', 'Gentamicin', 'Kidney')"
+    ],
+    "predicted": [
+      "('Medication-Comorbidity', 'Gentamicin', 'Chronic Kidney Disease Stage 3')"
+    ],
+    "reason": "Unrecognized drug string or missing allergy documentation prevented rule trigger.",
+    "safety_implication": "Potential safety risk missed; secondary manual review required."
+  },
+  {
+    "patient_id": "P081",
+    "error_type": "FALSE_POSITIVE",
+    "expected": [
+      "('Medication-Medication', 'Warfarin', 'Aspirin')"
+    ],
+    "predicted": [
+      "('Medication-Medication', 'Aspirin', 'Warfarin')"
+    ],
+    "reason": "Rule matched lower-priority edge case or observation escalation.",
+    "safety_implication": "May cause alert fatigue; clinician review filters out irrelevance."
+  },
+  {
+    "patient_id": "P081",
+    "error_type": "FALSE_NEGATIVE",
+    "expected": [
+      "('Medication-Medication', 'Warfarin', 'Aspirin')"
+    ],
+    "predicted": [
+      "('Medication-Medication', 'Aspirin', 'Warfarin')"
+    ],
+    "reason": "Unrecognized drug string or missing allergy documentation prevented rule trigger.",
+    "safety_implication": "Potential safety risk missed; secondary manual review required."
+  }
+]
