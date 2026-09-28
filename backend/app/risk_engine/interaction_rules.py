@@ -22,6 +22,22 @@ KNOWN_INTERACTIONS = [
         "base_score": 68.0,
         "confidence": 85.0,
         "desc": "ACE inhibitor (Lisinopril) combined with potassium-sparing diuretic (Spironolactone) increases hyperkalemia risk."
+    },
+    {
+        "med_a": "clopidogrel",
+        "med_b": "omeprazole",
+        "level": "MODERATE",
+        "base_score": 65.0,
+        "confidence": 88.0,
+        "desc": "CYP2C19 inhibition by Omeprazole significantly reduces antiplatelet efficacy of Clopidogrel."
+    },
+    {
+        "med_a": "heparin",
+        "med_b": "aspirin",
+        "level": "HIGH",
+        "base_score": 86.0,
+        "confidence": 91.0,
+        "desc": "Parenteral anticoagulation (Heparin) combined with Aspirin elevates systemic hemorrhage risk."
     }
 ]
 

@@ -11,6 +11,7 @@ import { ConsentPage } from './pages/ConsentPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { PatientListPage } from './pages/PatientListPage';
 import { PatientDetailPage } from './pages/PatientDetailPage';
+import { WardRoundPage } from './pages/WardRoundPage';
 import { BaselinePage } from './pages/BaselinePage';
 import { EvaluationPage } from './pages/EvaluationPage';
 import { FailureCasesPage } from './pages/FailureCasesPage';
@@ -40,6 +41,7 @@ const ProtectedLayout: React.FC<{ children: React.ReactNode }> = ({ children }) 
     if (path.startsWith('/dashboard')) return 'Ward Safety Overview';
     if (path.startsWith('/patients/')) return 'Patient Decision Support Profile';
     if (path.startsWith('/patients')) return 'Patient Census Directory';
+    if (path.startsWith('/ward-round')) return 'Multi-Patient Ward Round Batch Review';
     if (path.startsWith('/baseline')) return 'Baseline Benchmark Experiment';
     if (path.startsWith('/evaluation')) return 'Evaluation Metrics Dashboard';
     if (path.startsWith('/failure-cases')) return 'Handled Failure & Edge Cases';
@@ -78,6 +80,7 @@ export const App: React.FC = () => {
           <Route path="/dashboard" element={<ProtectedLayout><DashboardPage /></ProtectedLayout>} />
           <Route path="/patients" element={<ProtectedLayout><PatientListPage /></ProtectedLayout>} />
           <Route path="/patients/:patientId" element={<ProtectedLayout><PatientDetailPage /></ProtectedLayout>} />
+          <Route path="/ward-round" element={<ProtectedLayout><WardRoundPage /></ProtectedLayout>} />
           <Route path="/baseline" element={<ProtectedLayout><BaselinePage /></ProtectedLayout>} />
           <Route path="/evaluation" element={<ProtectedLayout><EvaluationPage /></ProtectedLayout>} />
           <Route path="/failure-cases" element={<ProtectedLayout><FailureCasesPage /></ProtectedLayout>} />

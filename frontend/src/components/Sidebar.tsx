@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { 
   LayoutDashboard, Users, AlertTriangle, GitCompare, BarChart3, 
   FileCode, ShieldCheck, MessageSquarePlus, Lock, Settings, 
-  LogOut, ChevronLeft, ChevronRight, PlayCircle 
+  LogOut, ChevronLeft, ChevronRight, PlayCircle, Building2 
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
@@ -24,6 +24,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onStartDemo }) => {
   const navItems = [
     { label: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
     { label: 'Patients', path: '/patients', icon: Users },
+    { label: 'Ward Round Batch', path: '/ward-round', icon: Building2 },
     { label: 'Baseline', path: '/baseline', icon: GitCompare },
     { label: 'Evaluation', path: '/evaluation', icon: BarChart3 },
     { label: 'Failure Cases', path: '/failure-cases', icon: FileCode },
