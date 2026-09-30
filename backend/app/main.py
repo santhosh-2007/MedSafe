@@ -10,6 +10,7 @@ from backend.app.api.evaluation import router as evaluation_router
 from backend.app.api.feedback import router as feedback_router
 from backend.app.api.privacy import router as privacy_router
 from backend.app.api.fhir import router as fhir_router
+from backend.app.api.reports import router as reports_router
 
 # Initialize tables
 Base.metadata.create_all(bind=engine)
@@ -38,6 +39,7 @@ app.include_router(evaluation_router)
 app.include_router(feedback_router)
 app.include_router(privacy_router)
 app.include_router(fhir_router)
+app.include_router(reports_router)
 
 @app.get("/api/health")
 def health_check():
